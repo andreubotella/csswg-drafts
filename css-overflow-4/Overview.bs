@@ -711,8 +711,8 @@ The 'line-clamp' property</h3>
 
 	<pre class="propdef">
 		Name: line-clamp
-		Value: none | <<integer [1,∞]>> | auto
-		Initial: none
+		Value: ''none'' | <<integer [1,∞]>> | ''auto''
+		Initial: ''none''
 		Applies to: [=block containers=] or [=vertical webkit-box boxes=]
 		Inherited: no
 		Percentages: N/A
@@ -802,7 +802,7 @@ The 'line-clamp' property</h3>
 	point=] in the box tree will not be rendered, as if they had
 	''visibility: hidden''. This includes [=independent formatting contexts=] as
 	well as [=out-of-flow=] boxes. Any overflow of such boxes and line boxes is
-	always [=ink overflow=] (as opposed to [=scroll overflow=]).
+	always [=ink overflow=] (as opposed to [=scrollable overflow=]).
 
 	Note: For [=out-of-flow=] boxes, what determines whether they are rendered
 	or not is their position in the box tree, rather than where they are
@@ -877,8 +877,8 @@ Legacy compatibility</h4>
 
 	<pre class="propdef">
 		Name: -webkit-line-clamp
-		Value: none | <<integer [1,∞]>>
-		Initial: none
+		Value: ''none'' | <<integer [1,∞]>>
+		Initial: ''none''
 		Applies to: [=vertical webkit-box boxes=]
 		Inherited: no
 		Percentages: N/A
@@ -887,7 +887,7 @@ Legacy compatibility</h4>
 	</pre>
 
 	If the computed value of '-webkit-line-clamp' for a [=vertical webkit-box
-	box=] is not <dfn for=-webkit-line-clamp dnf-type=value>none</dfn>, and the
+	box=] is not <dfn dfn-for=-webkit-line-clamp dfn-type=value>none</dfn>, and the
 	computed value of 'line-clamp' is ''line-clamp/none'', then the used value
 	of 'line-clamp' is set to the given number of lines.
 
