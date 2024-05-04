@@ -746,15 +746,14 @@ The 'line-clamp' property</h3>
 		<dt><dfn>auto</dfn>
 		<dd>The box establishes a [=line-clamp container=] whose [=clamp point=]
 		is the furthermost possible clamp point where the box's [=automatic
-		block size=] as determined below would not overflow its
-		[=preferred size|preferred=] or [=maximum size|maximum=] [=block size=].
-		Only [=definite sizes=] are considered for this purpose.
+		block size=] (as determined below) would not be greater than the [=block
+		size=] the box would have if its [=automatic block size=] were infinite.
 
 		Issue: Would it be possible for a non-overflowing [=clamp point=] to
 		follow an overflowing one? Chromium's implementation uses the clamp
 		point immediately before the first overflowing one.
 
-		Issue: How should this interact with [=out-of-flow=] boxes?
+		Issue: How should this interact with float clearance?
 
 	</dl>
 
