@@ -817,8 +817,8 @@ The 'line-clamp' property</h3>
 
 	Note: No ellipsis will be rendered if there is some content between the line
 	box and the clamp point, or if there is no content between the line box and
-	the end of the line-clamp container. The end of a box doesn't count as
-	content.
+	the end of the line-clamp container. The end of a box (i.e. an HTML close
+	tag) doesn't count as content.
 
 	If a [=block container=] contains a [=clamp point=], inside itself or in any
 	of its descendants, its [=automatic block size=] will not take into account
